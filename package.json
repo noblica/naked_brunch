@@ -1,0 +1,27 @@
+{
+  "name": "naked-brunch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bower": "^1.5.3"
+  },
+  "devDependencies": {
+    "angularjs-templates-brunch": "^1.0.0",
+    "brunch": "^2.5.3",
+    "css-brunch": "^2.0.0",
+    "javascript-brunch": "^2.0.0",
+    "jshint-brunch": "^2.0.0",
+    "uglify-js-brunch": "^2.0.1",
+    "browser-sync-brunch": "0.0.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "naked-brunch",
+    "brunch"
+  ],
+  "author": "noblica",
+  "license": "MIT"
+}

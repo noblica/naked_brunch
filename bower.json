@@ -1,0 +1,28 @@
+{
+  "name": "naked-brunch",
+  "version": "0.0.1",
+  "description": "naked brunch",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "naked-brunch",
+    "brunch"
+  ],
+  "authors": [
+    "noblica"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.7",
+    "angular-ui-router": "~0.2.15",
+    "angular-resource": "~1.4.7"
+  }
+}
