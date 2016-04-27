@@ -3,7 +3,10 @@ module.exports = {
         ignored: /.+\.spec\.js/
     },
     paths: {
-        public: ''
+        public: 'public/'
+    },
+    npm: {
+        enabled: false
     },
     modules: {
         definition: false,
