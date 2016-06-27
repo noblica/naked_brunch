@@ -24,7 +24,7 @@ module.exports = {
         },
         stylesheets: {
             joinTo: {
-                'app.css': /^(app|bower_components)/
+                'css/app.css': /^(app|bower_components)/
             }
         },
         templates: {
