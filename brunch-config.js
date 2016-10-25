@@ -1,6 +1,8 @@
 module.exports = {
     conventions: {
-        ignored: /.+\.spec\.js/
+        ignored: [/^bower_components\/bootstrap-sass\/assets\/javascripts/,
+                    /_.+\.scss/],
+        assets: /^app\/assets/
     },
     paths: {
         public: 'public/'
@@ -15,17 +17,19 @@ module.exports = {
     files: {
         javascripts: {
             joinTo: {
-                'js/app.js': /^app/,
-                'js/libraries.js': /^bower_components/
+                'js/app.js': ['app/**/*.js', '!app/**/*.spec.js'],
+                'js/libraries.js': /^bower_components/,
+                'js/test.js': 'app/**/*.spec.js'
             },
             order: {
-                before: [/^app\/([0-9a-zA-Z]+\/)*[0-9a-zA-Z]+(\.module)?\.js$/]
+                before: [/^app\/([0-9a-zA-Z\-]+\/)+[0-9a-zA-Z]+(\.module)\.js$/,
+                    /^app\/[0-9a-zA-Z]+(\.module)\.js$/]
             }
         },
         stylesheets: {
-            joinTo: {
-                'css/app.css': /^(app|bower_components)/
-            }
+                joinTo: {
+                    'css/app.css': /^app/
+                }
         },
         templates: {
             joinTo: {
@@ -42,6 +46,9 @@ module.exports = {
             'digest-brunch'],
         angular_templates: {
             module: 'app'
+        },
+        uglify: {
+            ignored: /js\/test\.js/
         }
     }
 };

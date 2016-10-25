@@ -1,6 +1,6 @@
 {
   "name": "naked-brunch",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
@@ -8,15 +8,23 @@
   },
   "devDependencies": {
     "angularjs-templates-brunch": "^1.0.0",
+    "browser-sync-brunch": "0.0.9",
     "brunch": "^2.5.3",
     "css-brunch": "^2.0.0",
+    "jasmine-core": "^2.4.1",
     "javascript-brunch": "^2.0.0",
     "jshint-brunch": "^2.0.0",
-    "uglify-js-brunch": "^2.0.1",
-    "browser-sync-brunch": "0.0.9"
+    "karma": "^1.1.1",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "sass-brunch": "^2.6.3",
+    "uglify-js-brunch": "^2.0.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma start karma.conf.js",
+    "run": "brunch w -s",
+    "start": "npm test && npm run"
   },
   "keywords": [
     "naked-brunch",
